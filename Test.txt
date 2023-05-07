@@ -1,0 +1,42 @@
+Testing code Commands:  
+
+1) To view file in the current directory - 'ls'
+2) To view the current directory path - 'pwd'
+3) To see the redirection commans - 
+    -> echo fo2 > foo bar
+    -> echo foo < bar
+4) While using the batch mode extension - 
+    -> created some file with name srcipt1.sh commands as follow:
+            -> echo hello
+            -> ls
+            -> pwd
+            -> echo world | echo hello2
+            -> echo foo3 > foo4 bar
+            -> cat foo4
+            -> exit
+    -> created some file with name srcipt2.sh commands as follow:
+            -> echo hello
+            -> ls -l
+            -> pwd
+            -> echo world | echo hello2
+            -> ls *.c
+            -> ls test*
+            -> echo foo3 > foo4 bar
+            -> cat foo4
+            -> exit
+
+Implemented extensions In interactive mode as well as batch mode:
+
+4) Wildcard Commands - 
+    -> ls *.c
+    -> ls abc*.c
+    -> ls ab*
+5) Below are some Tested Multiple pipe commands - 
+    -> cat foo1 | cat foo2 | echo world 
+    -> echo hello | echo world
+    -> echo foo1 | cat foo2
+    -> ls -l | echo files
+    -> echo file < check | ls - l | echo success
+    -> ls *.c && echo all files with C extension
+    -> pwd | echo my pwd
+
